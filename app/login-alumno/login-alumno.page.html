@@ -1,0 +1,29 @@
+<ion-content>
+
+   <img src="/assets/logo.png" alt="" class="img-logo">
+   <p class="txt-version">VERSION ESTUDIANTE</p>
+
+   <div class="bg-box-login">
+      
+      <div class="bg-ico-login">
+         <img src="/assets/img-user-login.png" alt="" class="img-login">
+      </div>
+      
+      <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+         <ion-input type="email" name="email" [(ngModel)]="usuario.email" placeholder="CORREO INSTITUCIONAL" class="input-login ion-text-center" required></ion-input>
+         <ion-input type="password" name="password" [(ngModel)]="usuario.password" placeholder="CONTRASEÑA" class="input-login ion-text-center" required></ion-input>
+
+         <ion-button routerLink="/home" expand="block" fill="clear" shape="round" class="boton-recuperar">
+            RECUPERAR CONTRASEÑA
+         </ion-button>
+
+         <ion-button type="submit" routerLink="/home" expand="block" class="boton-login">
+            INICIAR SESIÓN
+         </ion-button>
+      </form>
+   </div>
+   
+   <ion-button class="bg-change-version">
+      <img src="/assets/briefcase.svg" class="img-change-version">
+   </ion-button>
+</ion-content>
