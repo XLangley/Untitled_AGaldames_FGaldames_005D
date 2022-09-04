@@ -1,20 +1,25 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-buttons slot="start">
+      <ion-button (click)="openFirst()">
+        <ion-icon slot="start" name="menu-outline" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title slot="start" class="txt-home"> 
+      HOME
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="txt-welcome-version">
+    <p class="txt-welcome">BIENVENIDO</p>
+    <p class="txt-version">D O C E N T E</p>
+  </div>
+  <div class="group-qr-generator">
+    <ion-button class="btn-generar-qr" routerLink="/login-docente">
+      <img src="/assets/qr-code.jpg " class="img-qr">
+    </ion-button>
+    <p class="txt-generar"> GENERAR </p>
+    <p class="txt-qr">QR CLASE</p>
   </div>
 </ion-content>

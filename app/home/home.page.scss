@@ -1,27 +1,51 @@
-#container {
+ion-toolbar{
+  --background: linear-gradient(50.47deg, #CBE9F3 3.75%, #2EA0C4 89.73%);
+}
+
+.txt-home{
   text-align: center;
-
+  color: black;
+}
+.txt-welcome-version{
+  margin-top: 3em;
+}
+.txt-welcome{
+  margin-top: 2em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.txt-version{
+  margin-top: 0em;
+  color: #000;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.btn-generar-qr{
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 250px;
+  height: 250px;
+  left: calc(50% - 250px/2);
+  top: calc(50% - 250px/2);
+  --background: linear-gradient(134.09deg, #CBE9F3 -29.28%, #2EA0C4 96.75%);;
+  --border-radius: 30px;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.img-qr{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.txt-generar{
+  margin-top: 21em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bolder;
 }
-
-#container a {
-  text-decoration: none;
+.txt-qr{
+  margin-top: .2em;
+  color: #2F9ABC;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
 }
