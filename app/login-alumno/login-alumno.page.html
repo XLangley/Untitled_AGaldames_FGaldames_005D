@@ -13,7 +13,7 @@
          <ion-input type="email" name="email" [(ngModel)]="usuario.email" placeholder="CORREO INSTITUCIONAL" class="input-login ion-text-center" required></ion-input>
          <ion-input type="password" name="password" [(ngModel)]="usuario.password" placeholder="CONTRASEÑA" class="input-login ion-text-center" required></ion-input>
 
-         <ion-button routerLink="/home" expand="block" fill="clear" shape="round" class="boton-recuperar">
+         <ion-button routerLink="/recuperar" expand="block" fill="clear" shape="round" class="boton-recuperar">
             RECUPERAR CONTRASEÑA
          </ion-button>
 
@@ -23,7 +23,11 @@
       </form>
    </div>
    
-   <ion-button class="bg-change-version">
-      <img src="/assets/briefcase.svg" class="img-change-version">
-   </ion-button>
+   <div class="parent-change-version">
+      <ion-button class="bg-change-version">
+         <img src="/assets/briefcase.svg" class="img-change-version">
+      </ion-button>
+      <p class="txt-change-version txt-cv-bottom">CAMBIAR A</p>
+      <p class="txt-change-version txt-cv-top">DOCENTE</p>
+   </div>
 </ion-content>

@@ -25,52 +25,53 @@ ion-content{
     font-weight: bold;
 }
 
-.bg-box-login{
+.box-recuperar{
+    display: block;
+
     position: relative;
-    top: 4.6rem;
+    top: 6rem;
+}
+
+.header-recuperar{
     
     width: 15rem;
-    height: 12.5rem;
+    height: 3rem;
     margin-left: auto;
     margin-right: auto;
-
-    border-radius: 20px;
     
+    border-radius: 15px 15px 0px 0px;
+    
+    background: radial-gradient(100% 1932.97% at 0% 0%, #55C4E7 0%, #2F9EC1 100%);
+}
+
+.txt-header{
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 3rem;
+}
+
+.body-recuperar{
+
+    position: relative;
+    top: -0.5rem;
+
+    width: 15rem;
+    height: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 0px 0px 20px 20px;
+
     background: rgba(255, 255, 255, 0.85);
-
-    filter: drop-shadow(0px 0px 0.5rem rgba(0, 0, 0, 0.25));
 }
 
-.bg-ico-login{
+.input-recuperar{
     position: relative;
-    top: -2.5rem;
-
-    width: 5rem;
-    height: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
-
-    background: linear-gradient(180deg, #2EA0C4 0%, #27819D 100%);
-}
-
-.img-login{
-    position: relative;
-    top: 0.7rem;
-    left: 0.35rem;
-    
-    height: 4.3rem;
-
-    border-radius: 44%;
-}
-
-.input-login{
-    position: relative;
-    top: -2rem;
+    top: 2rem;
 
     width: 13rem;
+    height: 2.5rem;
     margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -86,16 +87,7 @@ ion-content{
 
 .boton-recuperar{
     position: relative;
-    top: -1.4rem;
-
-    color: #2EA0C4;
-
-    font-size: 0.8rem;
-}
-
-.boton-login{
-    position: relative;
-    top: -0.7rem;
+    top: 4.3rem;
     
     width: 10rem;
     margin-left: auto;
@@ -107,14 +99,11 @@ ion-content{
     --background: #2EA0C4;
 }
 
-.parent-change-version{
-    position: relative;
-    top: 8.5rem;
-
-}
-
-.bg-change-version{
+.boton-volver{
     display: block;
+
+    position: relative;
+    top: 13rem;
 
     width: 5rem;
     height: 5rem;
@@ -124,32 +113,6 @@ ion-content{
     --border-radius: 50%;
 
     --background: linear-gradient(180deg, #2EA0C4 0%, #27819D 100%);
+
+    --icon-font-size: 3rem;
 }
-
-.img-change-version{
-    display: block;
-
-    position: relative;
-
-    margin-left: auto;
-    margin-right: auto;
-    
-    height: 3.5rem;
-}
-
-.txt-change-version{
-    color: #000;
-    text-align: center;
-    font-weight: bolder;
-}
-.txt-cv-top{
-    margin-top: 0;
-
-    font-size: 1.4rem;
-}
-.txt-cv-bottom{
-    margin-bottom: 0;
-    
-    font-size: 0.8rem;
-}
-
