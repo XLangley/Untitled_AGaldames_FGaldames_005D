@@ -74,6 +74,8 @@ ion-content{
     margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
+    --padding-start: 0;
+    --padding-end: 0;
 
     border-radius: 10px;
 
@@ -82,6 +84,8 @@ ion-content{
     color: #000;
     font-size: 0.9rem;
     font-weight: bold;
+
+    text-align: center;
 }
 
 .boton-recuperar{
@@ -143,13 +147,13 @@ ion-content{
     font-weight: bolder;
 }
 .txt-cv-top{
-    margin-top: 0;
-
-    font-size: 1.4rem;
-}
-.txt-cv-bottom{
     margin-bottom: 0;
     
     font-size: 0.8rem;
+}
+.txt-cv-bottom{
+    margin-top: 0;
+    
+    font-size: 1.4rem;
 }
 
