@@ -9,7 +9,7 @@
       </div>
       <div class="body-recuperar">
          <form #formulario="ngForm" (ngSubmit)="onSubmit()">
-            <ion-input type="email" name="email" [(ngModel)]="solicitud.email" placeholder="CORREO INSTITUCIONAL" class="input-recuperar ion-text-center" required></ion-input>
+            <ion-input type="email" name="email" [(ngModel)]="solicitud.email" placeholder="CORREO INSTITUCIONAL" class="input-recuperar" required></ion-input>
             <ion-button type="submit" routerLink="" expand="block" class="boton-recuperar">
                ENVIAR
             </ion-button>
