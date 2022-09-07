@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-login-alumno',
@@ -11,7 +12,10 @@ export class LoginAlumnoPage implements OnInit {
 
   ngOnInit() {
   }
-  
+  ionViewWillEnter() {
+    AppComponent.isAlumno = true;
+  }
+
   usuario={
     email:'',
     password:''

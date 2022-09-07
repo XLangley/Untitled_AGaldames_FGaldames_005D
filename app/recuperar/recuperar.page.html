@@ -1,16 +1,16 @@
-<ion-content>
+<ion-content id="ion-content">
    <img src="/assets/logo.png" alt="" class="img-logo">
-   <p class="txt-version">VERSION ESTUDIANTE</p>
+   <p class="txt-version" id="txt-version"></p>
 
 
    <div class="box-recuperar">
-      <div class="header-recuperar">
+      <div id="header">
          <p class="txt-header"> RECUPERAR CONTRASEÑA </p>
       </div>
       <div class="body-recuperar">
          <form #formulario="ngForm" (ngSubmit)="onSubmit()">
             <ion-input type="email" name="email" [(ngModel)]="solicitud.email" placeholder="CORREO INSTITUCIONAL" class="input-recuperar" required></ion-input>
-            <ion-button type="submit" routerLink="" expand="block" class="boton-recuperar">
+            <ion-button type="submit" routerLink="" expand="block" id="enviar">
                ENVIAR
             </ion-button>
          </form>
@@ -18,7 +18,7 @@
    </div>
 
    <ion-buttons>
-      <ion-back-button class="boton-volver" text="" icon="arrow-undo"></ion-back-button>
+      <ion-back-button text="" icon="arrow-undo" id="volver"></ion-back-button>
    </ion-buttons>
 
 </ion-content>

@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AnimationController, Animation } from '@ionic/angular';
 
 export const enterAnimation = (baseEl: HTMLElement, opts?: any): Animation => {
   const duration = 300;
-  console.log('baseEl: ', baseEl);
-  console.log('opts: ', opts);
 
   const animationCtrl = new AnimationController();
 
@@ -42,7 +40,9 @@ interface Componente{
   styleUrls: ['app.component.scss'],
 })
 
-export class AppComponent {
+export class AppComponent{
+  public static isAlumno = true;
+  
   constructor() {}
 
   componentes: Componente[]=[
@@ -52,11 +52,16 @@ export class AppComponent {
       redirecTo:'/home'
     },
     {
+      icon:'cog',
+      name: 'Configuración',
+      redirecTo:'/configuracion'
+    },
+    {
       icon:'log-out-outline',
       name: 'Cerrar Sesion',
       redirecTo:'/login-alumno'
     },
-
   ]
+
 }
 
