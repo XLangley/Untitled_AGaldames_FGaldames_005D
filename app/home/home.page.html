@@ -1,25 +1,31 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button (click)="openFirst()">
-        <ion-icon slot="start" name="menu-outline" color="dark"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title slot="start" class="txt-home"> 
-      HOME
-    </ion-title>
+      <ion-buttons slot="start">
+        <ion-button (click)="openFirst()">
+          <ion-icon slot="start" name="menu-outline" color="dark"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <h1 class="txt-home">HOME</h1>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 <ion-content>
-  <div class="txt-welcome-version">
-    <p class="txt-welcome">BIENVENIDO</p>
+  <div class="header">
+    <h2 class="txt-home">HOME</h2>
+    <div class="menu-button">
+      <ion-button (click)="openFirst()" size="large" fill="clear">
+        <ion-icon class="ico-menu-button" name="menu-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+  <div class="parent-welcome-version" color="dark">
+    <p class="txt-welcome" color="dark">BIENVENIDO</p>
     <p class="txt-version">D O C E N T E</p>
   </div>
   <div class="group-qr-generator">
     <ion-button class="btn-generar-qr" routerLink="/login-docente">
       <img src="/assets/qr-code.jpg " class="img-qr">
     </ion-button>
-    <p class="txt-generar"> GENERAR </p>
+    <p class="txt-generar" color="dark"> GENERAR </p>
     <p class="txt-qr">QR CLASE</p>
   </div>
 </ion-content>

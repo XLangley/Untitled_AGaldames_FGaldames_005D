@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-login-docente',
@@ -10,6 +11,10 @@ export class LoginDocentePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ionViewWillEnter() {
+    AppComponent.isAlumno = false;
   }
   usuario={
     email:'',

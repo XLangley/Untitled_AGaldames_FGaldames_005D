@@ -1,22 +1,50 @@
-ion-toolbar{
-  --background: linear-gradient(50.47deg, #CBE9F3 3.75%, #2EA0C4 89.73%);
+.header{
+  position: relative;
+  bottom: 1.8rem;
+  height: 6rem;
+
+  border-radius: 0 0 2rem 2rem;
+
+  background: linear-gradient(50.47deg, #CBE9F3 3.75%, #2EA0C4 89.73%);
+}
+
+.menu-button{
+  display: block;
+  position: relative;
+
+  left: 0.5rem;
+  bottom: 0.8rem;
+  
+}
+.ico-menu-button{
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .txt-home{
-  text-align: center;
+  display: block;
+  
+  position: relative;
+  top: 2.75rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
   color: black;
+  font-weight: bold;
+  text-align: center;
 }
-.txt-welcome-version{
-  margin-top: 3em;
+.parent-welcome-version{
+  margin-top: 0;
 }
 .txt-welcome{
-  margin-top: 2em;
-  color: rgb(0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 .txt-version{
   margin-top: 0em;
-  color: #000;
   text-align: center;
   font-weight: bolder;
   font-size: 25px;
@@ -38,7 +66,6 @@ ion-toolbar{
 }
 .txt-generar{
   margin-top: 21em;
-  color: rgb(0, 0, 0);
   text-align: center;
   font-weight: bolder;
 }

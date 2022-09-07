@@ -1,6 +1,33 @@
+.tittle{
+    position: relative;
+    bottom: 0.5rem;
+    
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
 ion-toolbar{
     --background: linear-gradient(50.47deg, #CBE9F3 3.75%, #2EA0C4 89.73%);
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 .txt-menu{
     text-align: center;
+}
+ion-menu {
+    --height: 40%;
+    backdrop-filter: blur(10px);
+
+    ion-list{
+        background: transparent;
+        top: 10rem !important;
+    }
+    ion-item{
+        --background: transparent;
+        border-radius: 1.5rem;
+    }
+}
+ion-menu::part(container){
+    top: 10rem ;
+    left: 9.5%;
+    border-radius: 2rem;
 }
