@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/home"
+        text="Volver"
+        color="primary"
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Informacion QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label >Sección: </ion-label>
+      <ion-input class="input-seccion" type="text" name="seccion" [(ngModel)]="informacion.Seccion" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha: </ion-label>
+      <ion-input class="input-fecha" type="date" name="date" [(ngModel)]="informacion.Fecha" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora Inicio: </ion-label>
+      <ion-input class="input-Hinicio" type="time" name="HraInicio" [(ngModel)]="informacion.HoraInicio" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Hora Termino: </ion-label>
+      <ion-input class="input-HTermino" type="time" name="HraTermino" [(ngModel)]="informacion.HoraTermino" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button type="submit" expand="full" class="btn-generar" >
+        Default
+      </ion-button>
+    </ion-item> 
+  </form>
+</ion-content>
