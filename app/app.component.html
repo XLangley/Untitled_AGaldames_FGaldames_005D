@@ -1,7 +1,7 @@
 <ion-app>
-  <ion-menu contentId="main" menuId="first" side="start" auto-hide="true">
+  <ion-menu contentId="main" menuId="first" side="start" auto-hide="true" (ionDidClose)="menuClosed()">
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar id="toolbar">
         <ion-title class="tittle">MENU</ion-title>
       </ion-toolbar>
     </ion-header>

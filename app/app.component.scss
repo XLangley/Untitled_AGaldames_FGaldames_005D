@@ -6,8 +6,16 @@
     color: black;
     font-weight: bold;
 }
-ion-toolbar{
+
+.bg-toolbar-docente{
     --background: linear-gradient(50.47deg, #CBE9F3 3.75%, #2EA0C4 89.73%);
+}
+
+.bg-toolbar-alumno{
+    --background: linear-gradient(50.47deg, #FFB169 3.75%, #FF7B1C 89.73%);
+}
+
+ion-toolbar{
     border-radius: 0 0 0.5rem 0.5rem;
 }
 .txt-menu{
@@ -28,6 +36,6 @@ ion-menu {
 }
 ion-menu::part(container){
     top: 10rem ;
-    left: 9.5%;
+    left: 9.5vw;
     border-radius: 2rem;
 }
