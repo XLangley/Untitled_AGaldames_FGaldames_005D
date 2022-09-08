@@ -1,4 +1,6 @@
-.header{
+/*#region Docente*/
+
+.header-docente{
   position: relative;
   bottom: 1.8rem;
   height: 6rem;
@@ -8,6 +10,59 @@
   background: linear-gradient(50.47deg, #CBE9F3 3.75%, #2EA0C4 89.73%);
 }
 
+.btn-qr-docente{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: calc(50% - 250px/2);
+  top: calc(50% - 250px/2);
+  --background: linear-gradient(134.09deg, #CBE9F3 -29.28%, #2EA0C4 96.75%);;
+  --border-radius: 30px;
+}
+
+.txt-qr-docente{
+  margin-top: 0.1rem;
+  color: #2F9ABC;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+/*#endregion*/
+
+/*#region Alumno*/
+
+.header-alumno{
+  position: relative;
+  bottom: 1.8rem;
+  height: 6rem;
+
+  border-radius: 0 0 2rem 2rem;
+
+  background: radial-gradient(102.31% 102.31% at 0% 0%, #FFB169 0%, #FF7B1C 100%);
+}
+
+.btn-qr-alumno{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: calc(50% - 250px/2);
+  top: calc(50% - 250px/2);
+  --background: radial-gradient(102.31% 102.31% at 0% 0%, #FFB169 0%, #FF7B1C 100%);
+  --border-radius: 30px;
+}
+
+.txt-qr-alumno{
+  margin-top: 0.1rem;
+  color: #FF7B1C;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+/*#endregion*/
+
+
 .menu-button{
   display: block;
   position: relative;
@@ -16,6 +71,7 @@
   bottom: 0.8rem;
   
 }
+
 .ico-menu-button{
   color: black;
   font-size: 2rem;
@@ -35,44 +91,36 @@
   font-weight: bold;
   text-align: center;
 }
+
 .parent-welcome-version{
   margin-top: 0;
 }
+
 .txt-welcome{
   margin-top: 0;
   margin-bottom: 0.5rem;
   text-align: center;
 }
+
 .txt-version{
   margin-top: 0em;
   text-align: center;
   font-weight: bolder;
   font-size: 25px;
+  letter-spacing: 0.5rem;
 }
-.btn-generar-qr{
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  left: calc(50% - 250px/2);
-  top: calc(50% - 250px/2);
-  --background: linear-gradient(134.09deg, #CBE9F3 -29.28%, #2EA0C4 96.75%);;
-  --border-radius: 30px;
-}
+
 .img-qr{
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 }
-.txt-generar{
-  margin-top: 21em;
+
+.txt-funcion{
+  margin-top: 21rem;
+  margin-bottom: 0;
   text-align: center;
   font-weight: bolder;
 }
-.txt-qr{
-  margin-top: .2em;
-  color: #2F9ABC;
-  text-align: center;
-  font-weight: bolder;
-  font-size: 25px;
-}
+

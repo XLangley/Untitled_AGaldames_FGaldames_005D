@@ -1,104 +1,3 @@
-/*#region Alumno*/
-.bg-alumno{
-    --background: radial-gradient(102.31% 102.31% at 0% 0%, #FFB169 0%, #FF7B1C 100%);
-}
-.header-alumno{
-    
-    width: 15rem;
-    height: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    
-    border-radius: 15px 15px 0px 0px;
-    
-    background: radial-gradient(100% 1932.97% at 0% 0%, #55C4E7 0%, #2F9EC1 100%);
-}
-
-.enviar-alumno{
-    position: relative;
-    top: 4.3rem;
-    
-    width: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    --border-radius: 0px 0px 15px 15px;
-    --box-shadow: transparent;
-
-    --background: #2EA0C4;
-}
-
-.volver-alumno{
-    display: block;
-
-    position: relative;
-    top: 13rem;
-
-    width: 5rem;
-    height: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    --border-radius: 50%;
-
-    --background: linear-gradient(180deg, #2EA0C4 0%, #27819D 100%);
-
-    --color: white;
-    --icon-font-size: 3rem;
-}
-/*#endregion*/
-
-/*#region Alumno*/
-.bg-docente{
-    --background: radial-gradient(102.31% 102.31% at 0% 0%, #CBE9F3 0%, #2EA0C4 100%);
-}
-.header-docente{
-    
-    width: 15rem;
-    height: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    
-    border-radius: 15px 15px 0px 0px;
-    
-    background: radial-gradient(100% 1932.97% at 0% 0%, #FFB169 0%, #FF7B1C 100%);
-}
-
-.enviar-docente{
-    position: relative;
-    top: 4.3rem;
-    
-    width: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    --border-radius: 0px 0px 15px 15px;
-    --box-shadow: transparent;
-
-    --background: #FF7B1C;
-}
-
-.volver-docente{
-    display: block;
-
-    position: relative;
-    top: 13rem;
-
-    width: 5rem;
-    height: 5rem;
-    margin-left: auto;
-    margin-right: auto;
-
-    --border-radius: 50%;
-
-    --background: linear-gradient(180deg, #FFB169 0%, #FF7B1C 100%);
-
-    --color: white;
-    --icon-font-size: 3rem;
-}
-/*#endregion*/
-
-
 .img-logo{
     display: block;
 
@@ -175,3 +74,103 @@
     font-weight: bold;
     text-align: center;
 }
+
+/*#region Alumno*/
+.bg-alumno{
+    --background: radial-gradient(102.31% 102.31% at 0% 0%, #FFB169 0%, #FF7B1C 100%);
+}
+.header-alumno{
+    
+    width: 15rem;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 15px 15px 0px 0px;
+    
+    background: radial-gradient(100% 1932.97% at 0% 0%, #55C4E7 0%, #2F9EC1 100%);
+}
+
+.enviar-alumno{
+    position: relative;
+    top: 4.3rem;
+    
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    --border-radius: 0px 0px 15px 15px;
+    --box-shadow: transparent;
+
+    --background: #2EA0C4;
+}
+
+.volver-alumno{
+    display: block;
+
+    position: relative;
+    top: 13rem;
+
+    width: 5rem;
+    height: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    --border-radius: 50%;
+
+    --background: linear-gradient(180deg, #2EA0C4 0%, #27819D 100%);
+
+    --color: white;
+    --icon-font-size: 3rem;
+}
+/*#endregion*/
+
+/*#region Docente*/
+.bg-docente{
+    --background: radial-gradient(102.31% 102.31% at 0% 0%, #CBE9F3 0%, #2EA0C4 100%);
+}
+.header-docente{
+    
+    width: 15rem;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 15px 15px 0px 0px;
+    
+    background: radial-gradient(100% 1932.97% at 0% 0%, #FFB169 0%, #FF7B1C 100%);
+}
+
+.enviar-docente{
+    position: relative;
+    top: 4.3rem;
+    
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    --border-radius: 0px 0px 15px 15px;
+    --box-shadow: transparent;
+
+    --background: #FF7B1C;
+}
+
+.volver-docente{
+    display: block;
+
+    position: relative;
+    top: 13rem;
+
+    width: 5rem;
+    height: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    --border-radius: 50%;
+
+    --background: linear-gradient(180deg, #FFB169 0%, #FF7B1C 100%);
+
+    --color: white;
+    --icon-font-size: 3rem;
+}
+/*#endregion*/

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { AnimationController, Animation } from '@ionic/angular';
+import { Component } from '@angular/core';
+import { AnimationController, Animation, MenuController } from '@ionic/angular';
 
 export const enterAnimation = (baseEl: HTMLElement, opts?: any): Animation => {
   const duration = 300;
@@ -43,7 +43,7 @@ interface Componente{
 export class AppComponent{
   public static isAlumno = true;
   
-  constructor() {}
+  constructor(private menu: MenuController) {}
 
   componentes: Componente[]=[
     {
@@ -63,5 +63,23 @@ export class AppComponent{
     },
   ]
 
+
+  openMenu() {
+    this.menu.open('first');
+    const toolbar = document.getElementById('toolbar');
+    
+    if (AppComponent.isAlumno) {
+      toolbar?.classList.add('bg-toolbar-alumno');
+    } else {
+      toolbar?.classList.add('bg-toolbar-docente');
+    }
+  }
+
+  menuClosed(){
+    const toolbar = document.getElementById('toolbar');
+    toolbar?.classList.remove('bg-toolbar-alumno');
+    toolbar?.classList.remove('bg-toolbar-docente');
+  }
+  
 }
 
