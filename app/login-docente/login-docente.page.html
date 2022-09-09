@@ -30,4 +30,24 @@
     <p class="txt-change-version txt-cv-top">CAMBIAR A</p>
     <p class="txt-change-version txt-cv-bottom">ALUMNO</p>
   </div>
+  
+  <ion-button class="btn-registrarse" id="open-modal" fill="clear">
+    ¿No tienes cuenta? Crea una.
+  </ion-button>
+  
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content class="bg-modal">
+        <ion-toolbar>
+          <ion-title>REGISTRATE</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()" color="success">Confirmar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-input type="text" placeholder="CORREO" class="input-register"></ion-input>
+        <ion-input type="password" placeholder="CONTRASEÑA" class="input-register"></ion-input>
+        <ion-input type="password" placeholder="REPETIR CONTRASEÑA" class="input-register"></ion-input>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
 </ion-content>

@@ -2,9 +2,9 @@
     display: block;
 
     position: relative;
-    top: 2rem;
-    
-    width: 15rem;
+
+    width: 35vh;
+    margin-top: 6vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -12,12 +12,12 @@
 
 .txt-version{
     position: relative;
-    top: 1.2rem;
 
+    margin-top: 1ch;
     text-align: center;
 
     color: #000;
-    font-size: 1rem;
+    font-size: 2.25vh;
     font-weight: bold;
 }
 
@@ -25,7 +25,7 @@
     display: block;
 
     position: relative;
-    top: 6rem;
+    top: 10vh;
 
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 
@@ -34,17 +34,18 @@
 .txt-header{
     color: white;
     text-align: center;
-    font-size: 0.9rem;
-    line-height: 3rem;
+    font-size: 2vh;
+    line-height: 6vh;
 }
 
 .body-recuperar{
 
     position: relative;
-    top: -0.5rem;
-
-    width: 15rem;
-    height: 7rem;
+    bottom: 1vh;
+    width: 75vw;
+    height: 15.5vh;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     
@@ -55,11 +56,11 @@
 
 .input-recuperar{
     position: relative;
-    top: 2rem;
+    top: 4vh;
 
-    width: 13rem;
-    height: 2.5rem;
-    margin-top: 0.5rem;
+    width: 60vw;
+    height: 5vh;
+    min-height: 1.5rem;
     margin-left: auto;
     margin-right: auto;
     --padding-start: 0;
@@ -70,7 +71,7 @@
     background: #D9D9D9;
 
     color: #000;
-    font-size: 0.9rem;
+    font-size: 2vh;
     font-weight: bold;
     text-align: center;
 }
@@ -81,8 +82,9 @@
 }
 .header-alumno{
     
-    width: 15rem;
-    height: 3rem;
+    width: 75vw;
+    height: 7vh;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     
@@ -93,9 +95,11 @@
 
 .enviar-alumno{
     position: relative;
-    top: 4.3rem;
-    
-    width: 10rem;
+    top: 9.8vh;
+
+    width: 50vw;
+    height: 5vh;
+    // margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -109,10 +113,10 @@
     display: block;
 
     position: relative;
-    top: 13rem;
+    top: 25vh;
 
-    width: 5rem;
-    height: 5rem;
+    width: 12vh;
+    height: 12vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -131,8 +135,9 @@
 }
 .header-docente{
     
-    width: 15rem;
-    height: 3rem;
+    width: 75vw;
+    height: 7vh;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     
@@ -143,9 +148,11 @@
 
 .enviar-docente{
     position: relative;
-    top: 4.3rem;
-    
-    width: 10rem;
+    top: 9.8vh;
+
+    width: 50vw;
+    height: 5vh;
+    // margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -159,10 +166,10 @@
     display: block;
 
     position: relative;
-    top: 13rem;
+    top: 25vh;
 
-    width: 5rem;
-    height: 5rem;
+    width: 12vh;
+    height: 12vh;
     margin-left: auto;
     margin-right: auto;
 
