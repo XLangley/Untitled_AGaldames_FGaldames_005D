@@ -6,9 +6,9 @@ ion-content{
     display: block;
 
     position: relative;
-    top: 2rem;
-    
-    width: 15rem;
+
+    width: 35vh;
+    margin-top: 6vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -16,21 +16,22 @@ ion-content{
 
 .txt-version{
     position: relative;
-    top: 1.2rem;
 
+    margin-top: 1ch;
     text-align: center;
 
     color: #000;
-    font-size: 1rem;
+    font-size: 2.25vh;
     font-weight: bold;
 }
 
 .bg-box-login{
     position: relative;
-    top: 4.6rem;
     
-    width: 15rem;
-    height: 12.5rem;
+    width: 75vw;
+    height: calc(2.7rem + 22.3vh);
+    margin-top: 10vh;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
 
@@ -43,10 +44,10 @@ ion-content{
 
 .bg-ico-login{
     position: relative;
-    top: -2.5rem;
+    bottom: 4.5vh;
 
-    width: 5rem;
-    height: 5rem;
+    width: 9vh;
+    height: 9vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -58,20 +59,24 @@ ion-content{
 
 .img-login{
     position: relative;
-    top: 0.7rem;
-    left: 0.35rem;
+    top: 1.49vh;
+    left: 0.69vh;
     
-    height: 4.3rem;
+    height: 7.5vh;
+    margin-bottom: 0;
 
-    border-radius: 44%;
+    border-radius: 46%;
 }
 
 .input-login{
     position: relative;
-    top: -2rem;
+    bottom: 4vh;
 
-    width: 13rem;
-    margin-top: 0.5rem;
+    width: 60vw;
+    height: 5vh;
+    min-height: 1.5rem;
+    margin-top: 2vh;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     --padding-start: 0;
@@ -82,7 +87,7 @@ ion-content{
     background: #D9D9D9;
 
     color: #000;
-    font-size: 0.9rem;
+    font-size: 2vh;
     font-weight: bold;
 
     text-align: center;
@@ -90,18 +95,20 @@ ion-content{
 
 .boton-recuperar{
     position: relative;
-    top: -1.4rem;
+    bottom: 2.4vh;
 
     color: #2EA0C4;
 
-    font-size: 0.8rem;
+    font-size: 1.7vh;
 }
 
 .boton-login{
     position: relative;
-    top: -0.7rem;
+    bottom: 0.8vh;
     
-    width: 10rem;
+    width: 50vw;
+    height: 5vh;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
 
@@ -113,15 +120,15 @@ ion-content{
 
 .parent-change-version{
     position: relative;
-    top: 8.5rem;
+    top: calc(2.7rem + 3vh);
 
 }
 
 .bg-change-version{
     display: block;
 
-    width: 5rem;
-    height: 5rem;
+    width: 10vh;
+    height: 10vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -138,7 +145,7 @@ ion-content{
     margin-left: auto;
     margin-right: auto;
     
-    height: 3.5rem;
+    height: 10vh;
 }
 
 .txt-change-version{
@@ -150,11 +157,55 @@ ion-content{
 .txt-cv-top{
     margin-bottom: 0;
     
-    font-size: 0.8rem;
+    font-size: 2.3vh;
 }
 
 .txt-cv-bottom{
     margin-top: 0;
     
-    font-size: 1.4rem;
+    font-size: 4vh;
+}
+
+ion-modal {
+    --height: 32.2vh;
+    --width: 90%;
+    
+    --border-radius: 16px;
+    --background: transparent;
+    backdrop-filter: blur(10px);
+}
+.bg-modal{
+    background: rgba(255, 255, 255, 0.376);
+
+}
+
+ion-modal ion-content::part(background){
+    --background: transparent;
+}
+
+ion-modal ion-toolbar {
+--background: rgb(0, 0, 0);
+--color: white;
+}
+
+.input-register{
+    margin-top: 0.4rem;
+    text-align: center;
+    color: #000;
+}
+
+
+.btn-registrarse{
+    display: block;
+
+    position: relative;
+    top: 4.5vh;
+
+    color: #000;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 0.8rem;
+    font-weight: bold;
 }

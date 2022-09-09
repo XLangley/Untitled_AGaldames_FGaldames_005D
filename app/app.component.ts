@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AnimationController, Animation, MenuController } from '@ionic/angular';
 
 export const enterAnimation = (baseEl: HTMLElement, opts?: any): Animation => {
@@ -40,7 +40,7 @@ interface Componente{
   styleUrls: ['app.component.scss'],
 })
 
-export class AppComponent{
+export class AppComponent implements OnInit{
   public static isAlumno = true;
   
   constructor(private menu: MenuController) {}
@@ -48,26 +48,28 @@ export class AppComponent{
   componentes: Componente[]=[
     {
       icon:'home',
-      name: 'Inicio',
+      name: 'INICIO',
       redirecTo:'/home'
     },
     {
-      icon:'cog',
-      name: 'Configuración',
-      redirecTo:'/configuracion'
+      icon:'calendar',
+      name: 'HORARIO',
+      redirecTo:'/horario'
     },
     {
       icon:'log-out-outline',
-      name: 'Cerrar Sesion',
+      name: 'CERRAR SESIÓN',
       redirecTo:'/login-alumno'
     },
   ]
 
-
   openMenu() {
     this.menu.open('first');
+  }
+
+  checkMenuColor(){
     const toolbar = document.getElementById('toolbar');
-    
+
     if (AppComponent.isAlumno) {
       toolbar?.classList.add('bg-toolbar-alumno');
     } else {
@@ -80,6 +82,23 @@ export class AppComponent{
     toolbar?.classList.remove('bg-toolbar-alumno');
     toolbar?.classList.remove('bg-toolbar-docente');
   }
+
+  
+  ngOnInit() {
+    const toggle = document.querySelector('#themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    toggle!.setAttribute('checked', prefersDark.matches.toString());
+    document.body.classList.toggle('dark', prefersDark.matches);
+  }
+
+  
+
+  toggleTheme(event){
+    document.body.classList.toggle('dark', event.detail.checked);
+  }
+
+  
   
 }
 
