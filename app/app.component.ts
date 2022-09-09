@@ -52,6 +52,11 @@ export class AppComponent{
       redirecTo:'/home'
     },
     {
+      icon:'calendar-outline',
+      name: 'Horario',
+      redirecTo:'/horario'
+    },
+    {
       icon:'cog',
       name: 'Configuración',
       redirecTo:'/configuracion'
@@ -61,6 +66,7 @@ export class AppComponent{
       name: 'Cerrar Sesion',
       redirecTo:'/login-alumno'
     },
+
   ]
 
 

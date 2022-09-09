@@ -1,3 +1,43 @@
 ion-toolbar{
     --background: linear-gradient(50.47deg, #CBE9F3 3.75%, #2EA0C4 89.73%);
 }
+.btn-generar{
+    position: relative;
+    margin-top: 1em;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    --background: linear-gradient(103.9deg, #CBE9F3 5.67%, #2EA0C4 90.69%);
+
+    --border-radius: 15px 15px 15px 15px;    
+}
+ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: rgb(14 116 144);
+    --color: white;
+  }
+.img-qr-modal{
+    display: block;
+    position: relative;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 250px;
+    height: 250px;
+  }
+.item-modal-qr{
+    background: transparent;
+}
+  
